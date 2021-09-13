@@ -1,0 +1,13 @@
+.sidebar {
+    position: absolute;
+    color: var(--text-color);
+    background-color: var(--iki);
+    padding: 15px;
+    height: 75.6%;
+}
+
+.sidebar div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}

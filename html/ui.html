@@ -1,0 +1,398 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="slidebar.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52394643-1"></script>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+        <link rel="canonical" href="https://www.fontawesomecheatsheet.com/font-awesome-cheatsheet-5x/">    </head>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <body>
+        <div class="center">
+            <div class="mdt-container">
+
+                <!-- topbar start -->
+                <div class="top-bar">
+                    <div id="anasayfa">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Polis Departmanı</p>
+                    </div>
+                    <div class="top-bar-search">
+                        <input type="text" placeholder="İsim Soyisim, Plaka" id="serach-input">
+                    </div>
+                </div>
+                <!-- topbar end -->
+
+                <!-- home-page start -->
+                <div class="home-page" style="display: flex;">
+                    <div class="home-page-buttons tutanakCount" id="tutanaklar">
+                        <i class="far fa-folder"></i>
+                        <div>
+                            <span>321</span>
+                            <span>Tutanaklar</span>
+                        </div>
+                    </div>
+                    <div class="home-page-buttons" id="arananlar">
+                        <i class="far fa-folder"></i>
+                        <div>
+                            <span>05</span>
+                            <span>Arananlar</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- home-page end -->
+
+
+                <!-- tutanaklar start -->
+                <div class="tutanaklar" >
+                    <div class="tutanak-home-page">
+                        <div class="tutanaklar-container">
+                            <div class="home-page-buttons tutanakCount" id="tutanaklar">
+                                <i class="far fa-file-alt"></i>
+                                <div>
+                                    <span>321</span>
+                                    <span>Tutanaklar</span>
+                                </div>
+                            </div>
+                            <div class="tutanak-olustur-info">
+                                <span>Polis Departmanı Veritabanına kayıtlı tüm tutanakları burda görebilirsiniz.</span>
+                                <div class="tutanak-olustur-btn">
+                                    Tutanak Oluştur
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutanaklar-bottom"></div>
+                        <div class="ileri-geri-buttons" data="tutanak">
+                            <div>Önceki</div>
+                            <span style="display: flex; align-items: center; gap: 4px;"> 
+                                <p>1</p> / <p>2</p>
+                            </span>
+                            <div>Sonraki</div>
+                        </div>
+                    </div>
+
+                    <div class="tutanak-olustur">
+
+                        <div class="tutanaklar-container">
+
+                            <div class="tutanak-olustur-info">
+                                <span>Tutanak 2962 detayları aşağıdadır. Suçlular tutanak oluşturulduktan sonra düzenlenemez </span>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <div class="tutanak-save">
+                                        <i class="fas fa-save"></i>
+                                        Tutanağı Kaydet
+                                    </div>
+
+                                    <div class="tutanak-olustur-close" data=".tutanak-olustur">
+                                        <i class="fas fa-arrow-up"></i>
+                                        Geri
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="home-page-buttons" id="tutanaklar">
+                                <i class="far fa-file-alt"></i>
+                                <div>
+                                    <span id="tutanak-olustur-id">322</span>
+                                    <span>Tutanak Numarası</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutanak-olustur-details">
+                            <div>
+                                <i class="far fa-file-alt"></i>
+                                Tutanak Raporu
+                            </div>
+                            <textarea type="text" placeholder="Buraya tutanağın detaylarını girin.." id="tutanak-textarea"></textarea>
+                        </div>
+
+                        <div class="tutanak-kisi-secme">
+
+                            <div style="border-left: 5px solid var(--acikmavi);" id="copsPage">
+                                <span>Polis</span>
+                                <select id="copsInput">
+                                </select>
+                                <span class="tutanak-kisi-secme-add-button" id="copsAdd">
+                                    Ekle
+                                </span>
+                            </div>
+                            
+                            <div style="border-right: 5px solid var(--sari);" id="criminalsPage">
+                                <span>Suçlu</span>
+                                <select id="criminalsInput">
+                                </select>
+                                <span class="tutanak-kisi-secme-add-button" id="criminalsAdd">
+                                    Ekle
+                                </span>
+                            </div>
+
+
+                        </div>
+                        
+                        <div class="tutanak-suc-details">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                Suçlar 
+                                <i class="fas fa-minus"></i>                           
+                             </div>
+
+                            <div class="cezalar-tutanak"></div>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="tutanak-detaylar">
+                        <div class="tutanaklar-container">
+
+                            <div class="tutanak-olustur-info">
+                                <span id="tutanak-info-text"> </span>
+                                <div class="tutanak-olustur-close" data=".tutanak-detaylar">
+                                    <i class="far fa-times-circle"></i>
+                                    Geri
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="home-page-buttons" id="tutanaklar">
+                                <i class="far fa-file-alt"></i>
+                                <div>
+                                    <span id="tutanak-numara">322</span>
+                                    <span>Tutanak Numarası</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutanak-olustur-details">
+                            <div>
+                                <i class="far fa-file-alt"></i>
+                                Tutanak Raporu
+                            </div>
+                            <span id="tutanak-detay-rapor-aciklama"></span>
+                        </div>
+
+
+                        <div class="tutanak-kisi-secme">
+                            <div style="border-left: 5px solid var(--acikmavi);" id="copsPage" class="copsPage">
+                                <span>Polis</span>
+                            </div>
+                            
+                            <div style="border-right: 5px solid var(--sari);" id="criminalsPage" class="criminalsPage">
+                                <span>Suçlu</span>
+                            </div>
+                        </div>
+
+                        <div class="tutanak-suc-details">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                Suçlar 
+                                <i class="fas fa-minus"></i>                           
+                             </div>
+
+                            <div class="cezalar-tutanak"></div>
+                        </div>
+
+                        <div style="display: flex; flex-direction: row; align-items: center; margin: 15px;"> 
+                            <div id="evidenceButton">
+                                
+                            </div>
+                            <div class="tutanak-bottom-buttons" id="deleteButton">
+                                <i class="fas fa-trash"></i>
+                                Sil
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- tutanaklar end -->
+
+
+                <!-- arananlar start -->
+                <div class="arananlar">
+                    <div class="arananlar-homepage">
+                        <div class="search-page-top" style="display: flex;">
+
+                            <div class="search-page-top-elements">
+                                <span>Polis Departmanı Veritabanına kayıtlı tüm arama kayıtlarını burada görebilirsiniz</span>
+                            </div>
+
+                            <div class="home-page-buttons" id="tutanaklar">
+                                <i class="far fa-folder"></i>
+                                <div>
+                                    <span>1 Arama Kayıdı</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="arananlar-middle">
+                            <div class="arama-kayidi-filitre">
+                                <div>
+                                    <i class="fas fa-filter"></i>
+                                    Arama Kayıtlarını Filtrele
+                                </div>
+                                <div  class="arama-kayidi-filitre-bottom">
+                                    <div class="arananlar-name-surname">
+                                        <input placeholder="Ad Soyad" id="search-arananlar" value="kagan">
+                                    </div>
+
+                                    <div class="arananlar-oncelik">
+                                        <div>
+                                            <p>1</p>
+                                            <p>2</p>
+                                            <p>3</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="arananlar-filitre-temizle">
+                                        <div id="arananlar-temizle">Temizle</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="arama-kaydi-sonuc"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- arananlar end -->
+
+                <!-- cezalar start -->
+                <div class="cezalar">
+                </div>
+                <!-- cezalar end -->
+
+                <!-- search page start -->
+                <div class="serach-page" style="display: none;">
+                    <div class="search-page-top">
+
+                        <div class="search-page-top-elements">
+                            <div class="search-page-top-elements-details">
+                                <div>
+                                    <i class="fas fa-circle" style="color: var(--ceza1);"></i>
+                                    <span>Temiz</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-circle" style="color: var(--sari);"></i>
+                                    <span>Hükümlü</span>
+                                </div>
+
+                                <div>
+                                    <i class="fas fa-circle" style="color: var(--ceza3);"></i>
+                                    <span>Aranıyor</span>
+                                </div>
+                            </div>
+                            <span>Arama sonuçlarındaki bir kişinin dosyasını incelemek için için üzerine tıklayın</span>
+                        </div>
+
+                        <div class="home-page-buttons" id="tutanaklar">
+                            <i class="far fa-folder"></i>
+                            <div>
+                                <span>1 Sonuç Bulundu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-page-elements"></div>
+                    <div class="ileri-geri-buttons" data="search">
+                        <div>Önceki</div>
+                        <span style="display: flex; align-items: center; gap: 4px;"> 
+                            <p>1</p> / <p>2</p>
+                        </span>
+                        <div>Sonraki</div>
+                    </div>
+
+                </div>
+                <!-- search page end -->
+
+                <div class="user-profile" style="display: none;">
+                    <div class="user-profile-top" style="display: flex; align-items: center; justify-content: space-between; align-items: center; margin: 15px;">
+
+                        <div class="search-page-top-elements" style="justify-content: space-between;">
+                            <div class="search-page-top-elements-details">
+                                <div id="araniyor">
+                                    <i class="fas fa-circle" style="color: var(--ceza1);"></i>
+                                    <span>Temiz</span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="aramakaydı-olustur-btn" data=".user-profile">
+                                <i class="far fa-times-circle"></i>
+                                <span>Arama Kaydı Oluştur</span>
+                            </div>
+                        </div>
+
+                        <div class="home-page-buttons" id="tutanaklar">
+                            <i class="far fa-user"></i>
+                            <div style="display: flex; align-items: flex-end; gap: 8px;">
+                                <div style="display: flex; flex-direction: column  !important; text-align: right;">
+                                    <span id="player-name">Kagan Cengiz</span>
+                                    <span id="player-cid">#510</span>
+                                </div>
+                                <img style="width: 52px; height: 52px;" id="player-photo" src="https://cdn.discordapp.com/attachments/833463851550769222/833547585590788136/blank-profile-picture-973460_1280.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="user-profile-middle" style="display: block;">
+                        <div class="user-profile-middle-details">
+
+                            <div class="searched-player" style="border: none; margin: 15px;">
+                                <div class="searched-player-details">
+                                    <div class="searched-player-info">
+                                        <div>
+                                            <span>Meslek</span>
+                                            <span id="player-job">${data.job}</span>
+                                        </div>
+                                        <div>
+                                            <span>Kimlik Numarası</span>
+                                            <span id="player-id">#${data.id}</span>
+                                        </div>
+                                        <div>
+                                            <span>Banka Bakiyesi</span>
+                                            <span id="player-bank">$ ${data.bank}</span>
+                                        </div>
+                                        <div>
+                                            <span>Cinsiyet</span>
+                                            <span id="player-sex">${data.sex}</span>
+                                        </div>
+                                        <div>
+                                            <span>Doğum Tarihi</span>
+                                            <span id="player-dob">${data.dateofbirth}</span>
+                                        </div>
+                                        <div>
+                                            <span>Telefon Numarası</span>
+                                            <span id="player-phone">${data.phone_number}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="user-profile-middle-tutanaklar" style="display: flex; flex-wrap: wrap; flex-direction: row-reverse; background-color: var(--bes); max-height: 35%; overflow-y: auto; margin: 15px; border-radius: 5px;"></div>
+
+                    </div>
+                    <div class="user-profile-bottom" style="background-color: var(--bes); max-height: 35%; overflow-y: auto; margin: 15px; border-radius: 5px;     "></div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="index.js" type="text/javascript"></script>
+        <script src="cezalar.js" type="text/javascript"></script>
+
+    </body>
+</html>
